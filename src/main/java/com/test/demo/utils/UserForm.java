@@ -12,6 +12,7 @@ public class UserForm {
 
 
 	private Integer id;
+	private String name;
 	private String email;
 	private String password;
 	private Phone[] phones;

@@ -55,7 +55,7 @@ public class UserService {
 			for (Phone phone : userForm.getPhones()) {
 				phonesSet.add(phone);
 			}
-			user.setToken(com.test.demo.utils.Utils.generateToken(userForm.getEmail()));
+			user.setToken(Utils.generateToken(userForm.getEmail()));
 			user.setPhones(phonesSet);
 			User newUser = userRepository.save(user);
 			if (userForm.getPhones() != null) {
